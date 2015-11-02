@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to Semantic ui react docs\n\n\nBOTH DOCUMENTATION AND MODULE STILL IN CONSTRUCTION\n\n\nSemantic ui react is a module to use the framework Semantic-ui with React js.\nHere you can learn how to use this.\n\n\nCommon configuration\n\n\nYou will always need those modules:\n\n\n\nvar React = require('react');\nvar ReactDOM = require('react-dom');\n\n\n\n\n\nFor now all react elements has the next common configuration:\n\n\nconfig =  {\n    className: string or array,\n    color: string,\n    style: string or array\n}\n\n\n\n\n\n\nclassName\n: it is the class attribute of a html tag\n\n\ncolor\n: What kind of color will you button has.\n\n\nstyle\n: size,state,basic,etc\n\n\n\n\nTo each react element is given a configuration with the name \nconfig\n, example:\n\n\nHere I am creating a button\n\n\nFOR NOW YOU CAN NOT USE DATA ATTRIBUTE.\n\n\nvar configButton = {\n  text: 'Hello world',\n  className:  \u2018my-first-button\u2019\n  color: 'info',\n  others: {\n    id: 'hello-world-button',\n    name: 'The best button'\n  },\n  events: {\n    onClick: function(){console.log(this.props.config)}\n  }\n};\n\nReactDOM.render(React.createElement(button,{config:configButton}),document.getElementById('test'));",
+            "title": "Home"
+        },
+        {
+            "location": "/#welcome-to-semantic-ui-react-docs",
+            "text": "BOTH DOCUMENTATION AND MODULE STILL IN CONSTRUCTION  Semantic ui react is a module to use the framework Semantic-ui with React js.\nHere you can learn how to use this.",
+            "title": "Welcome to Semantic ui react docs"
+        },
+        {
+            "location": "/#common-configuration",
+            "text": "You will always need those modules:  \nvar React = require('react');\nvar ReactDOM = require('react-dom');  For now all react elements has the next common configuration:  config =  {\n    className: string or array,\n    color: string,\n    style: string or array\n}   className : it is the class attribute of a html tag  color : What kind of color will you button has.  style : size,state,basic,etc   To each react element is given a configuration with the name  config , example:  Here I am creating a button  FOR NOW YOU CAN NOT USE DATA ATTRIBUTE.  var configButton = {\n  text: 'Hello world',\n  className:  \u2018my-first-button\u2019\n  color: 'info',\n  others: {\n    id: 'hello-world-button',\n    name: 'The best button'\n  },\n  events: {\n    onClick: function(){console.log(this.props.config)}\n  }\n};\n\nReactDOM.render(React.createElement(button,{config:configButton}),document.getElementById('test'));",
+            "title": "Common configuration"
+        },
+        {
+            "location": "/elements/buttons/",
+            "text": "Attributes in type\n\n\n\n\nactive\n\n\ndisabled\n\n\nloading\n\n\nsize\n\n\ncompact\n\n\nfluid\n\n\ncircular\n\n\n\n\nButton\n\n\nHow to make a button.\n\n\nYou will need the basic module and the button module.\n\n\n\nvar React = require('react');\nvar ReactDOM = require('react-dom');\nvar button = require('button');\n\nvar configButton = {\n  text: 'Hello world',\n  className:  \u2018my-first-button\u2019\n  color: 'info',\n  others: {\n    id: 'hello-world-button',\n    name: 'The best button'\n  },\n  events: {\n    onClick: function(){console.log(this.props.config)}\n  }\n};\n\nReactDOM.render(React.createElement(button,{config:configButton}),document.getElementById('test'));",
+            "title": "Buttons"
+        },
+        {
+            "location": "/elements/buttons/#attributes-in-type",
+            "text": "active  disabled  loading  size  compact  fluid  circular",
+            "title": "Attributes in type"
+        },
+        {
+            "location": "/elements/buttons/#button",
+            "text": "How to make a button.  You will need the basic module and the button module.  \nvar React = require('react');\nvar ReactDOM = require('react-dom');\nvar button = require('button');\n\nvar configButton = {\n  text: 'Hello world',\n  className:  \u2018my-first-button\u2019\n  color: 'info',\n  others: {\n    id: 'hello-world-button',\n    name: 'The best button'\n  },\n  events: {\n    onClick: function(){console.log(this.props.config)}\n  }\n};\n\nReactDOM.render(React.createElement(button,{config:configButton}),document.getElementById('test'));",
+            "title": "Button"
+        }
+    ]
+}
