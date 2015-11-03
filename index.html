@@ -64,6 +64,10 @@
                             <a href="elements/buttons/">Buttons</a>
                         </li>
                     
+                        <li >
+                            <a href="elements/icons/">Icons</a>
+                        </li>
+                    
                     </ul>
                 </li>
             
@@ -129,7 +133,9 @@ var ReactDOM = require('react-dom');
 <p>To each react element is given a configuration with the name <code>config</code>, example:</p>
 <p>Here I am creating a button</p>
 <p><code>FOR NOW YOU CAN NOT USE DATA ATTRIBUTE.</code></p>
-<pre><code class="javascript">var configButton = {
+<pre><code class="javascript">var button = require('semantic-ui-react/components/buttons/button');
+
+var configButton = {
   text: 'Hello world',
   className:  ‘my-first-button’
   color: 'info',
