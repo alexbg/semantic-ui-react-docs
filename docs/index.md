@@ -36,6 +36,8 @@ Here I am creating a button
 ```FOR NOW YOU CAN NOT USE DATA ATTRIBUTE.```
 
 ```javascript
+var button = require('semantic-ui-react/components/buttons/button');
+
 var configButton = {
   text: 'Hello world',
   className:  ‘my-first-button’
