@@ -65,6 +65,10 @@
                         </li>
                     
                         <li >
+                            <a href="../divider/">Divider</a>
+                        </li>
+                    
+                        <li >
                             <a href="../icons/">Icons</a>
                         </li>
                     
@@ -82,7 +86,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../icons/">
+                    <a rel="prev" href="../divider/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -106,6 +110,15 @@
         
     
         <li class="main "><a href="#button-group">Button Group</a></li>
+        
+    
+        <li class="main "><a href="#icon-button">Icon Button</a></li>
+        
+    
+        <li class="main "><a href="#conditional-button">Conditional Button</a></li>
+        
+    
+        <li class="main "><a href="#animated-button">Animated Button</a></li>
         
     
     </ul>
@@ -213,7 +226,101 @@ ReactDOM.render(React.createElement(buttonsGroup,{config:configGroupIcon}),docum
 
 </code></pre>
 
-<p><code>You can make a group with only buttons or icons</code></p></div>
+<p><code>You can make a group with only buttons or icons</code></p>
+<h1 id="icon-button">Icon Button</h1>
+<p>How to make a icon button.</p>
+<p>You will need the basic modules and the iconButton module.</p>
+<p><strong>Attributes:</strong></p>
+<ul>
+<li><strong>button</strong>: The config of button</li>
+<li><strong>icon</strong>: The config of icon</li>
+<li><strong>labeled</strong>: true or false</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="javascript">
+var React = require('react');
+var ReactDOM = require('react-dom');
+var iconButton = require('semantic-ui-react/components/buttons/iconButton');
+
+var configIconButton = {
+  button: configButton,
+  icon: iconConfig,
+  labeled: true
+};
+
+ReactDOM.render(React.createElement(button,{config:configIconButton}),document.getElementById('test'));
+
+</code></pre>
+
+<h1 id="conditional-button">Conditional Button</h1>
+<p>How to make a conditional button.</p>
+<p>You will need the basic modules and the conditionalButton module.</p>
+<p><strong>Attributes:</strong></p>
+<ul>
+<li><strong>leftButton</strong>: The config of left button</li>
+<li><strong>rightButton</strong>: The config of right button</li>
+<li><strong>conditional</strong>: The kind of conditional you want.</li>
+<li><strong>className</strong>: class attribute</li>
+<li><strong>color</strong>: The color of all butons</li>
+<li><strong>others</strong>: More attributes you want to add in html's tags</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="javascript">
+var React = require('react');
+var ReactDOM = require('react-dom');
+var iconButton = require('semantic-ui-react/components/buttons/conditionalButton');
+
+conditionalButtonConfig = {
+  leftButton: {
+    text: 'izquierda',
+    color: 'facebook',
+    style: ['huge','circular']
+  },
+  rightButton: {
+    text: 'derecha',
+    color: 'google plus',
+    style: ['huge','circular']
+  },
+  conditional: 'or',
+};
+
+ReactDOM.render(React.createElement(button,{config:conditionalButton}),document.getElementById('test'));
+
+</code></pre>
+
+<h1 id="animated-button">Animated Button</h1>
+<p>How to make a Animated button.</p>
+<p>You will need the basic modules and the animatedButton module.</p>
+<p><strong>Attributes:</strong></p>
+<ul>
+<li><strong>visible</strong>: The config of visible button or a text</li>
+<li><strong>hidden</strong>: The config of hidden button or a text</li>
+<li><strong>conditional</strong>: The kind of conditional you want.</li>
+<li><strong>className</strong>: class attribute</li>
+<li><strong>color</strong>: The color of all butons</li>
+<li><strong>others</strong>: More attributes you want to add in html's tags</li>
+<li><strong>events</strong>: The events you want to add in html's tags</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="javascript">
+var React = require('react');
+var ReactDOM = require('react-dom');
+var iconButton = require('semantic-ui-react/components/buttons/conditionalButton');
+
+animatedButtonConfig = {
+  className: ['testAnimatedButton'],
+  color:'info',
+  style: ['fade','huge'],
+  visible: 'Texto',
+  hidden: iconConfig,
+  events: {
+    onMouseOver: function(){console.log('animated button event is working');}
+  }
+}
+
+ReactDOM.render(React.createElement(button,{config:conditionalButton}),document.getElementById('test'));
+
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

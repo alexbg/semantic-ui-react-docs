@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2015-11-03</lastmod>
+     <lastmod>2015-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,19 @@
         
     <url>
      <loc>None/elements/buttons/</loc>
-     <lastmod>2015-11-03</lastmod>
+     <lastmod>2015-11-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/elements/divider/</loc>
+     <lastmod>2015-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/elements/icons/</loc>
-     <lastmod>2015-11-03</lastmod>
+     <lastmod>2015-11-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

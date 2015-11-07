@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>Icons - Semantic ui react docs</title>
+	<title>Divider - Semantic ui react docs</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -64,12 +64,12 @@
                             <a href="../buttons/">Buttons</a>
                         </li>
                     
-                        <li >
-                            <a href="../divider/">Divider</a>
+                        <li class="active">
+                            <a href="./">Divider</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Icons</a>
+                        <li >
+                            <a href="../icons/">Icons</a>
                         </li>
                     
                     </ul>
@@ -81,12 +81,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../divider/">
+                    <a rel="next" href="../buttons/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li class="disabled">
-                    <a rel="prev" >
+                <li >
+                    <a rel="prev" href="../icons/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -103,13 +103,7 @@
         <li class="main active"><a href="#attributes-in-style">Attributes in style</a></li>
         
     
-        <li class="main "><a href="#colors">Colors</a></li>
-        
-    
-        <li class="main "><a href="#icon">Icon</a></li>
-        
-    
-        <li class="main "><a href="#flag-icon">Flag Icon</a></li>
+        <li class="main "><a href="#divider">Divider</a></li>
         
     
     </ul>
@@ -118,74 +112,30 @@
 
 <h1 id="attributes-in-style">Attributes in style</h1>
 <ul>
-<li><a href="http://semantic-ui.com/elements/button.html#fitted">fitted</a></li>
-<li><a href="http://semantic-ui.com/elements/button.html#disabled">disabled</a></li>
-<li><a href="http://semantic-ui.com/elements/button.html#loading">loading</a></li>
-<li><a href="http://semantic-ui.com/elements/button.html#size">size</a></li>
-<li><a href="http://semantic-ui.com/elements/button.html#circular">circular</a></li>
-<li><a href="http://semantic-ui.com/elements/button.html#bordered">bordered</a></li>
-<li><a href="http://semantic-ui.com/elements/button.html#link">link</a></li>
-<li><a href="http://semantic-ui.com/elements/button.html#rotated">rotated</a></li>
+<li><a href="http://semantic-ui.com/elements/divider.html#vertical-divider">vertical</a></li>
+<li><a href="http://semantic-ui.com/elements/divider.html#horizontal-divider">horizontal</a></li>
 </ul>
-<h1 id="colors">Colors</h1>
-<p>The attribute color can get the name you want, but there are some predefined
-names.</p>
-<ul>
-<li>primary</li>
-<li>secondary</li>
-<li>danger</li>
-<li>info</li>
-<li>success</li>
-</ul>
-<h1 id="icon">Icon</h1>
-<p>How to make a icon.</p>
-<p>You will need the basic modules and the icon module.</p>
+<h1 id="divider">Divider</h1>
+<p>How to make a divider.</p>
+<p>You will need the basic modules and the divider module.</p>
 <p><strong>Attributes:</strong></p>
 <ul>
-<li><strong>text</strong>: the button's text</li>
 <li><strong>className</strong>: class attribute</li>
-<li><strong>color</strong>: The color of icon</li>
 <li><strong>others</strong>: More attributes you want to add in html's tags</li>
-<li><strong>events</strong>: The events you want to add in html's tags</li>
+<li><strong>style</strong>: add the semantic's class</li>
 </ul>
 <p><strong>Example:</strong></p>
 <pre><code class="javascript">
 var React = require('react');
 var ReactDOM = require('react-dom');
-var icon = require('semantic-ui-react/components/icons/icon');
+var button = require('semantic-ui-react/components/dividers/divider');
 
-var iconConfig = {
-  className: 'icon-test',
-  icon: 'Alarm',
-  style: 'circular',
-  color: 'danger'
+var dividerConfig = {
+  className: 'divider-test',
+  style: 'horizontal'
 }
 
-ReactDOM.render(React.createElement(icon,{config:iconConfig}),document.getElementById('test'));
-
-</code></pre>
-
-<h1 id="flag-icon">Flag Icon</h1>
-<p>How to make a icon.</p>
-<p>You will need the basic modules and the flag icon module.</p>
-<p><strong>Attributes:</strong></p>
-<ul>
-<li><strong>className</strong>: class attribute</li>
-<li><strong>others</strong>: More attributes you want to add in html's tags</li>
-<li><strong>events</strong>: The events you want to add in html's tags</li>
-</ul>
-<p><strong>Example:</strong></p>
-<pre><code class="javascript">
-var React = require('react');
-var ReactDOM = require('react-dom');
-var icon = require('semantic-ui-react/components/icons/icon');
-
-var flagIconConfig = {
-  className: 'flag-test',
-  flag: 'france'
-}
-
-ReactDOM.render(React.createElement(flagIcon,{config:flagIconConfig}),document.getElementById('test'));
+ReactDOM.render(React.createElement(divider,{config:dividerConfig}),document.getElementById('test'));
 
 </code></pre></div>
         </div>
