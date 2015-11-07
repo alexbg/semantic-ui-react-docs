@@ -109,7 +109,8 @@ var configGroupIcon = {
 ReactDOM.render(React.createElement(buttonsGroup,{config:configGroupIcon}),document.getElementById('test'));
 
 ```
-```You can make a group with only buttons or icons```
+
+* **You can make a group with only buttons or icons**
 
 # Icon Button
 
