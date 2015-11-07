@@ -20,7 +20,6 @@ For now all react elements has the next common configuration:
 ```javascript
 config =  {
 	className: string or array,
-	color: string,
 	style: string or array
 }
 ```

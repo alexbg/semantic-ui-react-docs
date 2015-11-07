@@ -52,3 +52,32 @@ var iconConfig = {
 ReactDOM.render(React.createElement(icon,{config:iconConfig}),document.getElementById('test'));
 
 ```
+# Flag Icon
+
+How to make a icon.
+
+You will need the basic modules and the flag icon module.
+
+**Attributes:**
+
+
+* **className**: class attribute
+* **others**: More attributes you want to add in html's tags
+* **events**: The events you want to add in html's tags
+
+**Example:**
+
+```javascript
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+var icon = require('semantic-ui-react/components/icons/icon');
+
+var flagIconConfig = {
+  className: 'flag-test',
+  flag: 'france'
+}
+
+ReactDOM.render(React.createElement(flagIcon,{config:flagIconConfig}),document.getElementById('test'));
+
+```
